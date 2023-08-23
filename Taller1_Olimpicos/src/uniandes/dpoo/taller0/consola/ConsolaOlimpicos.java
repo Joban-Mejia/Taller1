@@ -114,40 +114,15 @@ public class ConsolaOlimpicos
 		System.out.println("\n" + "Medallistas por nombre" + "\n");
 
 		String nombre = input("Por favor ingrese el nombre del deportista");
+		Atleta atle   = calculadora.buscarAtleta( nombre );		
 		
-		if
-		{
-			
-			
-			
-			System.out.println("El atleta proviene de: " + Atleta.pais());
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			
-					String nombre_atleta = entry.getKey();
-					List<Map<String, Object>> medallas = entry.getValue();
-
-					System.out.println("El atleta " + nombre_atleta + " ha ganado " + medallas.size() + " medallas.");
-					for (Map<String, Object> medalla : medallas)
-					{
-						System.out.println("Evento: " + medalla.get("evento") + " (" + medalla.get("anio") + ")");
-						System.out.println("    Medalla: " + medalla.get("medalla"));
-					}
-				}
-			}
-			else
+		if( atle != null) {
+			System.out.println("El atleta proviene de: " + atle.pais());				
+		}	else
 			{
 				System.out.println("No se encontro un medallista con ese nombre.");
 			}
-		}
+		
 	}
 	
 	
